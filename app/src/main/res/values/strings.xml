@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">InD Bank</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="customers">Customers</string>
+    <string name="transactions">Transactions</string>
+    <string name="safe_and_secure">safe and secure</string>
+    <string name="email">email</string>
+    <string name="About">
+        Hello Everyone !
+        I am prashant ,currently pursuing b.tech with Computer science.
+        I got the opportunity to work with some excellent fellow interns during the tenure of my internship.
+        This is Task 1 of Mobile App development internship offered by The Sparks Foundation.
+
+        ABOUT TASK :
+
+
+
+
+    </string>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#ebecf0"
+    android:layout_height="match_parent"
+    tools:context=".Homefragment">
+
+    <ViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="wrap_content"
+        android:layout_height="224dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:autoStart="true"
+        android:flipInterval="2500">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:contentDescription="@string/safe_and_secure"
+            android:layout_height="match_parent"
+            android:src="@drawable/safe" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banking" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/money" />
+
+    </ViewFlipper>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/roundedge">
+
+        <ImageButton
+            android:id="@+id/imagebtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/roundedge"
+            android:src="@drawable/people"
+            android:onClick="customerLists"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagebtn1"
+            android:layout_marginStart="28dp"
+            android:background="@drawable/roundedge"
+            android:gravity="center"
+            android:text="@string/customers"
+            android:textColor="#000000" />
+
+        <ImageButton
+            android:id="@+id/imagebtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="28dp"
+            android:background="@drawable/roundedge"
+            android:src="@drawable/transactions"
+            android:onClick="History"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imagebtn2"
+            android:layout_alignEnd="@id/imagebtn2"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="-12dp"
+            android:background="@drawable/roundedge"
+            android:gravity="center"
+            android:text="@string/transactions"
+            android:textColor="#000000" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
