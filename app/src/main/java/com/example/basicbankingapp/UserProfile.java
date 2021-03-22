@@ -39,10 +39,14 @@ public class UserProfile extends AppCompatActivity {
              final  EditText enterAmt= new EditText(UserProfile.this);
              enterAmt.setInputType(InputType.TYPE_CLASS_NUMBER);
              builder.setView(enterAmt);
-             builder.setPositiveButton("Done",new DialogInterface.OnClickListener(){
+
+             builder.setPositiveButton("Send to",new DialogInterface.OnClickListener(){
                  public void onClick(DialogInterface arg0, int arg1) {
                      if(enterAmt.getText().toString().isEmpty())
                          error();
+                     else if(Double.parseDouble(enterAmt.getText().toString())>Double.parseDouble(t3.getText().toString())){
+                        error2();
+                     }
                      else{
 
                          Intent intent = new Intent(UserProfile.this, SelectToSend.class);
@@ -60,8 +64,12 @@ public class UserProfile extends AppCompatActivity {
 
 
     }
+
     public void error(){
         Toast.makeText(this,"AMOUNT CAN'T BE EMPTY",Toast.LENGTH_LONG).show();
+    }
+    public void error2(){
+        Toast.makeText(this,"AMOUNT CAN'T BE GREATER THAN CURRENT BALANCE ",Toast.LENGTH_LONG).show();
     }
 
 }
