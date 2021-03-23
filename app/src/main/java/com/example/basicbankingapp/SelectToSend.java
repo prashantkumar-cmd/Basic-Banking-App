@@ -117,6 +117,7 @@ public class SelectToSend extends AppCompatActivity implements MyAdapter.ListIte
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Amount successfully sent ");
         builder.setIcon(R.drawable.check_mark);
+        Toast.makeText(this,"Amount sent successfully",Toast.LENGTH_LONG).show();
 
     }
 
